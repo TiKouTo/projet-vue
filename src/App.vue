@@ -2,11 +2,7 @@
 <script setup>
 import Card from './components/cards.vue'
 import Search from './components/search.vue'
-
-// import fetchCard from './api.js'
-// import getCardsData from './CardsRepository.js'
-// import { getCardsData } from './CardsRepository';
-// import { fetchCard } from './api.js';
+// import Trie from './components/trie.vue'
 
 
 </script>
@@ -14,6 +10,7 @@ import Search from './components/search.vue'
 <template>
   <div class="cardsgallery">
     <Search @cardsUpdate="cardsDataUpdate"/>
+    <!-- <Trie :cards="cardsData"/> -->
     <Card 
         v-for="card in cardsData"
         :key="card.id" 
@@ -40,9 +37,6 @@ export default {
       this.cardsData = val
       console.log(val)
     }
-  },
-  created: function() {
-
   },
   }
 

@@ -4,7 +4,7 @@
         <input
         type="text"
         class="search-bar"
-        placeholder="Cherchez une carte"
+        placeholder="Cherchez un set"
         v-model="query"
         @keypress="searchCard"
         />
